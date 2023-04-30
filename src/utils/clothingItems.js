@@ -1,0 +1,6 @@
+const defaultClothingItems = [
+
+
+]
+
+export { defaultClothingItems }

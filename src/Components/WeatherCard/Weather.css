@@ -1,0 +1,25 @@
+.weather {
+  position: relative;
+  width: 1360px;
+  height: 80px;
+  margin: 33px 40px 40px;
+  background-color: #F3F3F3;
+}
+
+.weather_info {
+  display: flex;
+  align-items: center;
+  position: absolute;
+  margin-top: 20px;
+  padding-left: 16px;
+  font-family: 'Cabinet Grotesk';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 40px;
+  color: white;
+}
+
+.weather_image {
+  width: 100%;
+}

@@ -1,0 +1,24 @@
+.main {
+  /* padding: 0 20px; */
+  width: 1440px;
+  height: 822px;
+  /* left: 240px; */
+  top: 260px;
+  background-color: #F3F3F3;
+}
+
+.card_section {
+  margin-left: 38px;
+  margin-right: 41px;
+  margin-top: 0px;
+  /* font-family: 'Cabinet Grotesk'; */
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 25px;
+  color: black;
+}
+
+.card_items {
+  /* margin-top: 34px; */
+}
