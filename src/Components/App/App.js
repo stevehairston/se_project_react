@@ -5,19 +5,13 @@ import Footer from "../footer/Footer";
 import ModalWithForm from "../ModalWithForm/ModalWithForm";
 import { useEffect, useState } from "react";
 import ItemModal from "../ItemModal/ItemModal";
-import { getForecastWeather, parseWeatherData} from "../../utils/weatherApi";
-
-// const currentDate = new Date().toLocaleString("default", {
-//   month: "long",
-//   day: "numeric",
-// });
+import { getForecastWeather } from "../../utils/weatherApi";
 
 function App() {
-  // const weatherTemp = "102 °F";
   const [activeModal, setActiveModal] = useState("");
   const [selectedCard, setSelectedCard] = useState({});
-  const [temp, setTemp] = useState(0)
-  const [location, setLocation] = useState(0)
+  const [temp, setTemp] = useState(0);
+  const [location, setLocation] = useState("");
 
   const handleCreateModal = () => {
     setActiveModal("create");
@@ -28,29 +22,25 @@ function App() {
   };
 
   const handleSelectedCard = (card) => {
-    setActiveModal("preview")
+    setActiveModal("preview");
     setSelectedCard(card);
   };
 
   useEffect(() => {
     getForecastWeather().then((data) => {
-      // const temp = parseWeatherData(data);
-      const main = data.main
+      const main = data.main;
       const temperature = main && main.temp;
       const temp = Math.ceil(temperature);
-      setTemp(temp)
+      setTemp(temp);
 
-      const location = data.name
-      setLocation(location)
-
-    })
-console.log(temp);
-
+      const location = data.name;
+      setLocation(location);
+    });
   }, [temp]);
 
   return (
     <div>
-      <Header onCreateModal={handleCreateModal} currentLocation={location}/>
+      <Header onCreateModal={handleCreateModal} currentLocation={location} />
       <Main weatherTemp={temp} onSelectCard={handleSelectedCard} />
       <Footer className="footer" />
       {activeModal === "create" && (
@@ -80,9 +70,9 @@ console.log(temp);
           </div>
         </ModalWithForm>
       )}
-      {activeModal === "preview" &&
-        <ItemModal selectedCard={selectedCard}  onClose={handleCloseModal} />
-      }
+      {activeModal === "preview" && (
+        <ItemModal selectedCard={selectedCard} onClose={handleCloseModal} />
+      )}
     </div>
   );
 }

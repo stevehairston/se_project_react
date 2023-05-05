@@ -8,19 +8,17 @@
 }
 
 .card_name {
-  /* margin-top: 100px; */
   text-align: center;
-  z-index: 2;
-  position: relative;
-  /* width: 100%; */
   background-color: white;
+  position: absolute;
+  top: 20px;
 }
 
 .card_image {
   width: 328px;
   height: 328px;
   border-radius: 10px;
-  /* position: absolute; */
+  position: relative;
 }
 
 .card_items {
@@ -28,10 +26,11 @@
   flex-wrap: wrap;
   gap: 20px;
   justify-content: center;
-  margin-top: 20px;
+  margin-top: 34px;
 }
 
-.card__wrapper {
-  /* display: flex; */
-
+.card_wrapper {
+  display: flex;
+  position: relative;
+  justify-content: center;
 }
