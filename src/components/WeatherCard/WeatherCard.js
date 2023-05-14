@@ -1,23 +1,27 @@
 import "./Weather.css";
+import sunny from "../../images/day/sunny.svg"
+import cloudy from "../../images/day/cloudy.svg"
+import cloud from "../../images/night/cloud.svg"
+import moon from "../../images/night/moon.svg"
 
 const weatherOptions = [
   {
-    url: require("../../images/day/sunny.svg").default,
+    url: sunny,
     day: true,
     type: "sunny",
   },
   {
-    url: require("../../images/day/cloudy.svg").default,
+    url: cloudy,
     day: true,
     type: "cloudy",
   },
   {
-    url: require("../../images/night/cloud.svg").default,
+    url: cloud,
     day: false,
     type: "cloud",
   },
   {
-    url: require("../../images/night/moon.svg").default,
+    url: moon,
     day: false,
     type: "moon",
   },

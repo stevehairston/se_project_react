@@ -35,6 +35,9 @@ function App() {
 
       const location = data.name;
       setLocation(location);
+    })
+    .catch((err) => {
+      console.log(`An error has occurred ${err}`);
     });
   }, [temp]);
 

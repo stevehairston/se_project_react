@@ -14,12 +14,14 @@ const ModalWithForm = ({
           type="button"
           onClick={onClose}
           className="modal__button-close"
-        ></button>
+        />
         <h3>{title}</h3>
-        <form name={`${name}`} className="form">{children}</form>
-        <button type="submit" className="modal__button-submit">
-          {buttonText}
-        </button>
+        <form name={`${name}`} className="form">
+          {children}
+          <button type="submit" className="modal__button-submit">
+            {buttonText}
+          </button>
+        </form>
       </div>
     </div>
   );
