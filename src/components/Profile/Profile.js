@@ -1,7 +1,7 @@
 import React from "react";
 import "./Profile.css";
 import ClothesSection from "../ClothesSection/ClothesSection";
-import Sidebar from "../Sidebar/Sidebar";
+import SideBar from "../SideBar/SideBar";
 
 const Profile = ({
   onSelectCard,
@@ -15,7 +15,7 @@ const Profile = ({
   return (
     <div className="profile">
       <section className="profile__sidebar">
-        <Sidebar profileName={profileName} />
+        <SideBar profileName={profileName} />
       </section>
       <section className="profile__clothes">
         <ClothesSection
