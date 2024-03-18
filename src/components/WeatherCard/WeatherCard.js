@@ -1,8 +1,8 @@
 import "./Weather.css";
-import sunny from "../../images/day/sunny.svg"
-import cloudy from "../../images/day/cloudy.svg"
-import cloud from "../../images/night/cloud.svg"
-import moon from "../../images/night/moon.svg"
+import sunny from "../../images/day/sunny.svg";
+import cloudy from "../../images/day/cloudy.svg";
+import cloud from "../../images/night/cloud.svg";
+import moon from "../../images/night/moon.svg";
 
 const weatherOptions = [
   {
@@ -28,7 +28,6 @@ const weatherOptions = [
 ];
 
 const WeatherCard = ({ day, type, weatherTemp = "" }) => {
-
   const imageSrc = weatherOptions.filter((i) => {
     return i.day === day && i.type === type;
   });

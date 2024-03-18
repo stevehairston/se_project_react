@@ -1,0 +1,45 @@
+.profile {
+  display: flex;
+}
+
+.profile__items {
+  margin: 0px;
+  display: flex;
+  flex-direction: column;
+}
+
+.profile__your-items-title {
+  margin: 0px;
+}
+
+.profile__your-items {
+  font-family: "Cabinet Grotesk", "Arial", "sans-serif";
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  padding-top: 63px;
+  margin: 0px 0px 16px 0px;
+}
+
+.profile__name {
+  font-family: "Cabinet Grotesk";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+}
+
+.profile__info {
+  display: flex;
+  margin: 47px 0px 0px 40px;
+  align-content: space-between;
+  column-gap: 16px;
+  width: 229px;
+}
+
+.profile__sidebar {
+  display: flex;
+  width: 385px;
+}

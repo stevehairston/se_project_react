@@ -65,3 +65,18 @@
   font-size: 20px;
   line-height: 24px;
 }
+
+.itemModal_button-delete {
+  top: 518px;
+  position: absolute;
+  left: 365px;
+  height: 24px;
+  font-family: "Cabinet Grotesk";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+  color: #FF4D00;
+  border: none;
+  background-color: white;
+}

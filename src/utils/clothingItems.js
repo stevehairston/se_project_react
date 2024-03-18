@@ -1,6 +1,0 @@
-const defaultClothingItems = [
-
-
-]
-
-export { defaultClothingItems }

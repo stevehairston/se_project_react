@@ -1,6 +1,6 @@
 .card_section {
   margin-top: 20px;
-  font-family: 'Cabinet Grotesk';
+  font-family: "Cabinet Grotesk";
   font-style: normal;
   font-weight: 700;
   font-size: 20px;
@@ -15,7 +15,7 @@
 }
 
 .card_image {
-  width: 328px;
+  width: 325px;
   height: 328px;
   border-radius: 10px;
   position: relative;
@@ -25,7 +25,6 @@
   display: flex;
   flex-wrap: wrap;
   gap: 20px;
-  justify-content: center;
   margin-top: 34px;
 }
 
