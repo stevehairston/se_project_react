@@ -15,12 +15,12 @@ const ItemModal = ({ selectedCard, onClose, onDeleteCard }) => {
         />
         <div className="itemModal_card-name">{selectedCard.name}</div>
         <button
-            type="text"
-            className="itemModal_button-delete"
-            onClick={onDeleteCard}
-          >
-            Delete item
-          </button>
+          type="text"
+          className="itemModal_button-delete"
+          onClick={() => onDeleteCard(selectedCard)}
+        >
+          Delete item
+        </button>
         <div className="itemModal_card-weather">
           {" "}
           Weather: {selectedCard.weather}
