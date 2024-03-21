@@ -1,6 +1,6 @@
 import React from "react";
 import profileAvatar from "../../images/avatar.svg";
-import "../SideBar/SideBar.css";
+import "../SideBar/Sidebar.css";
 
 const SideBar = ({ profileName }) => {
   return (
