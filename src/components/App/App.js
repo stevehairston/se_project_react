@@ -3,7 +3,7 @@ import Header from "../Header/Header";
 import Main from "../Main/Main";
 import Footer from "../Footer/Footer";
 
-import AddItemModal from "../AddItemModal/AdditemModal";
+import AddItemModal from "../AddItemModal/AddItemModal";
 import { useEffect, useState } from "react";
 import ItemModal from "../ItemModal/ItemModal";
 import { getForecastWeather } from "../../utils/weatherApi";
