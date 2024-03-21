@@ -25,21 +25,32 @@ function Main({ weatherTemp, onSelectCard, clothingItems }) {
       return "cold";
     }
   }, [currentTemperatureUnit, temp]);
-
   const filteredCards = clothingItems.filter((item) => {
     return item.weather.toLowerCase() === weatherType;
   });
+
+  const currentTime = new Date().getHours();
+
+  const getIsDaytime = (time) => {
+    if (time > 6 && time < 19) {
+      return true;
+    } else {
+      return false;
+    }
+  };
+
+  const isDay = getIsDaytime(currentTime);
 
   return (
     <main className="main">
       <WeatherCard
         className="weather_info"
-        day={true}
-        type="sunny"
+        day={isDay}
+        type="clear"
         weatherTemp={temp}
       />
       <section className="card_section" id="card-section">
-        Today is {temp}° F / You may want to wear:
+        Today is {temp}° {currentTemperatureUnit} / You may want to wear:
         <div className="card_items">
           {filteredCards.map((item) => (
             <ItemCard item={item} onSelectCard={onSelectCard} key={item._id} />

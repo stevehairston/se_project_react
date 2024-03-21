@@ -4,6 +4,12 @@
   flex-wrap: wrap;
   gap: 20px;
   margin: 0px 0px 0px 0px;
+  margin-top: 20px;
+  font-family: "Cabinet Grotesk";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 25px;
 }
 
 .profile__add-button {
