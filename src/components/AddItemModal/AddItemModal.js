@@ -35,7 +35,6 @@ const AddItemModal = ({ handleCloseModal, onAddItem, isOpen }) => {
       onClose={handleCloseModal}
       name="addGarment"
       isOpen={isOpen}
-      // onSubmit={(e) => onAddItem({e, name})}
       onSubmit={handleSubmit}
     >
       <label className="form__label">
@@ -56,31 +55,39 @@ const AddItemModal = ({ handleCloseModal, onAddItem, isOpen }) => {
         <input
           type="url"
           name="link"
-          minLength="1"
-          maxLength="30"
+          minLength="10"
           className="form__input"
           placeholder="Image URL"
           onChange={handleURLChange}
         />
       </label>
-      <p
-        className="modal_type_weather"
-        value={weather}
-        onChange={handleWeatherChange}
-      >
-        Select the weather type:
-      </p>
+      <p className="modal_type_weather">Select the weather type:</p>
       <div>
         <div>
-          <input type="radio" id="hot" value="hot" />
+          <input
+            type="radio"
+            id="hot"
+            value="hot"
+            onChange={handleWeatherChange}
+          />
           <label className="form__input_label-weather">Hot</label>
         </div>
         <div>
-          <input type="radio" id="warm" value="warm" />
+          <input
+            type="radio"
+            id="warm"
+            value="warm"
+            onChange={handleWeatherChange}
+          />
           <label className="form__input_label-weather">Warm</label>
         </div>
         <div>
-          <input type="radio" id="cold" value="cold" />
+          <input
+            type="radio"
+            id="cold"
+            value="cold"
+            onChange={handleWeatherChange}
+          />
           <label className="form__input_label-weather">Cold</label>
         </div>
       </div>
