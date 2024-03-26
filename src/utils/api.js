@@ -45,6 +45,6 @@ const deleteItem = async (_id) => {
   return handleServerResponse(res);
 };
 
-const api = { getItemList, addItem, deleteItem };
+const api = { getItemList, addItem, deleteItem, handleServerResponse };
 
 export default api;

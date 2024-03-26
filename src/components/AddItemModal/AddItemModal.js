@@ -58,37 +58,50 @@ const AddItemModal = ({ handleCloseModal, onAddItem, isOpen }) => {
           minLength="10"
           className="form__input"
           placeholder="Image URL"
+          value={imageUrl}
           onChange={handleURLChange}
         />
       </label>
       <p className="modal_type_weather">Select the weather type:</p>
       <div>
         <div>
-          <input
-            type="radio"
-            id="hot"
-            value="hot"
-            onChange={handleWeatherChange}
-          />
-          <label className="form__input_label-weather">Hot</label>
+          <label className="form__input_label-weather">
+            <input
+              type="radio"
+              name="weather-button"
+              id="hot"
+              className="form__input_button"
+              value="hot"
+              onChange={handleWeatherChange}
+            />
+            Hot
+          </label>
         </div>
         <div>
+          <label className="form__input_label-weather">
           <input
-            type="radio"
-            id="warm"
-            value="warm"
-            onChange={handleWeatherChange}
-          />
-          <label className="form__input_label-weather">Warm</label>
+              type="radio"
+              name="weather-button"
+              id="warm"
+              className="form__input_button"
+              value="warm"
+              onChange={handleWeatherChange}
+            />
+            Warm
+          </label>
         </div>
         <div>
+          <label className="form__input_label-weather">
           <input
-            type="radio"
-            id="cold"
-            value="cold"
-            onChange={handleWeatherChange}
-          />
-          <label className="form__input_label-weather">Cold</label>
+              type="radio"
+              name="weather-button"
+              id="cold"
+              className="form__input_button"
+              value="cold"
+              onChange={handleWeatherChange}
+            />
+            Cold
+          </label>
         </div>
       </div>
     </ModalWithForm>

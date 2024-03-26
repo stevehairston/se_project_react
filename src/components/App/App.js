@@ -59,7 +59,7 @@ function App() {
         );
         handleCloseModal();
       })
-      .catch((err) => console.log(err));
+      .catch(console.error);
   };
 
   useEffect(() => {
@@ -80,7 +80,7 @@ function App() {
       .catch((err) => {
         console.log(`An error has occurred ${err}`);
       });
-  }, [temp]);
+  }, []);
 
   useEffect(() => {
     api
@@ -92,7 +92,6 @@ function App() {
   }, []);
 
   return (
-    <div>
       <CurrentTemperatureUnitContext.Provider
         value={{ currentTemperatureUnit, handleToggleSwitchChange }}
       >
@@ -131,7 +130,6 @@ function App() {
           />
         )}
       </CurrentTemperatureUnitContext.Provider>
-    </div>
   );
 }
 
