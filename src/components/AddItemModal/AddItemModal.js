@@ -79,7 +79,7 @@ const AddItemModal = ({ handleCloseModal, onAddItem, isOpen }) => {
         </div>
         <div>
           <label className="form__input_label-weather">
-          <input
+            <input
               type="radio"
               name="weather-button"
               id="warm"
@@ -92,7 +92,7 @@ const AddItemModal = ({ handleCloseModal, onAddItem, isOpen }) => {
         </div>
         <div>
           <label className="form__input_label-weather">
-          <input
+            <input
               type="radio"
               name="weather-button"
               id="cold"

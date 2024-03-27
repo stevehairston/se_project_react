@@ -3,7 +3,7 @@
   width: 1360px;
   height: 80px;
   margin: 33px 40px 40px;
-  background-color: #F3F3F3;
+  background-color: #f3f3f3;
 }
 
 .weather_info {
@@ -12,7 +12,7 @@
   position: absolute;
   margin-top: 20px;
   padding-left: 16px;
-  font-family: 'Cabinet Grotesk';
+  font-family: "Cabinet Grotesk";
   font-style: normal;
   font-weight: 700;
   font-size: 36px;

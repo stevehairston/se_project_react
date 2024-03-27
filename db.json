@@ -71,12 +71,6 @@
       "name": "Sweatshirt",
       "weather": "warm",
       "imageUrl": "https://practicum-content.s3.us-west-1.amazonaws.com/software-engineer/wtwr-project/Sweatshirt.png?etag=008a9674757bea2e0bdb31242e364be0"
-    },
-    {
-      "name": "NewCoat",
-      "imageUrl": "https://d2w9m16hs9jc37.cloudfront.net/dimg/blog/2023/09/hockerty_a_man_in_a_funnel_neck_coat_56d02e17_eca0_4438_b3d5_c9b10a3caf8a.png",
-      "weather": "cold",
-      "_id": 16
     }
   ]
 }

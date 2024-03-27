@@ -92,44 +92,44 @@ function App() {
   }, []);
 
   return (
-      <CurrentTemperatureUnitContext.Provider
-        value={{ currentTemperatureUnit, handleToggleSwitchChange }}
-      >
-        <Header onCreateModal={handleCreateModal} currentLocation={location} />
-        <Switch>
-          <Route exact path="/">
-            <Main
-              weatherTemp={temp}
-              clothingItems={clothingItems}
-              onSelectCard={handleSelectedCard}
-              onDeleteCard={handleCardDelete}
-            />
-          </Route>
-          <Route path="/profile">
-            <Profile
-              clothingItems={clothingItems}
-              onSelectCard={handleSelectedCard}
-              onCreateModal={handleCreateModal}
-              onDeleteCard={handleCardDelete}
-            />
-          </Route>
-        </Switch>
-        <Footer className="footer" />
-        {activeModal === "create" && (
-          <AddItemModal
-            handleCloseModal={handleCloseModal}
-            isOpen={activeModal === "create"}
-            onAddItem={onAddItem}
-          />
-        )}
-        {activeModal === "preview" && (
-          <ItemModal
-            selectedCard={selectedCard}
-            onClose={handleCloseModal}
+    <CurrentTemperatureUnitContext.Provider
+      value={{ currentTemperatureUnit, handleToggleSwitchChange }}
+    >
+      <Header onCreateModal={handleCreateModal} currentLocation={location} />
+      <Switch>
+        <Route exact path="/">
+          <Main
+            weatherTemp={temp}
+            clothingItems={clothingItems}
+            onSelectCard={handleSelectedCard}
             onDeleteCard={handleCardDelete}
           />
-        )}
-      </CurrentTemperatureUnitContext.Provider>
+        </Route>
+        <Route path="/profile">
+          <Profile
+            clothingItems={clothingItems}
+            onSelectCard={handleSelectedCard}
+            onCreateModal={handleCreateModal}
+            onDeleteCard={handleCardDelete}
+          />
+        </Route>
+      </Switch>
+      <Footer className="footer" />
+      {activeModal === "create" && (
+        <AddItemModal
+          handleCloseModal={handleCloseModal}
+          isOpen={activeModal === "create"}
+          onAddItem={onAddItem}
+        />
+      )}
+      {activeModal === "preview" && (
+        <ItemModal
+          selectedCard={selectedCard}
+          onClose={handleCloseModal}
+          onDeleteCard={handleCardDelete}
+        />
+      )}
+    </CurrentTemperatureUnitContext.Provider>
   );
 }
 
