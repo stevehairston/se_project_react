@@ -10,5 +10,5 @@ The focus of this project is a front-end server for the What to Wear (WTWR) appl
 - MongoDB
 
 ## Links <br>
-- [Backend Repository](https://github.com/stevehairston/se_project_express_full_backend)
+- [Backend Repository](https://github.com/stevehairston/se_project_fullstack_backend)
 
